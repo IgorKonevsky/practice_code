@@ -1,0 +1,96 @@
+<?php
+//Работа с условиями
+$a=1; $b=3; $c=4; $d=6;
+
+if($a>$b){
+	echo "a>b <br/>";
+	$a+=$c;
+	if($a>$d)
+		echo "a+c>d <br/>";
+	else 
+		echo "d>a+ca <br <br/>";
+}
+
+else {
+	echo "b>a <br/>";
+	$b+=$c;
+	if($b>$d)
+		echo "b+c>d <br/>";
+	else 
+		echo "d>b+c <br/>";
+}
+//Работа со строками
+
+$str1="hello"; $str2=" world";
+
+$str1.=$str2; //соеденение строк
+
+echo "$str1 <br/>";
+
+//Работа с циклами
+$arr = [
+	'a'=>1,
+	'b'=>2,
+	'c'=>3,
+	'd'=>4,
+	'e'=>5
+];
+
+foreach($arr as $k => $v){
+	echo " $k - $v <br/>";
+	
+}
+
+$Arr= [10,20,30,40,50];
+
+for($i=0;$i<5;$i++){
+	echo "$Arr[$i]-";
+	$Arr[$i]*=1.5;
+	echo "$Arr[$i] <br/>";
+}
+
+while($Arr[2]<100){
+	$Arr[2]*=1.5;
+	echo "$Arr[2] <br/>";
+}
+
+//Работа с массивами
+$Arr[]=999;//добавление элемента в конец
+
+for($i=0;$i<6;$i++){
+	echo "$Arr[$i] ";
+}
+echo "<br/>";
+
+unset($Arr[5]);//удаление последнего элемента
+
+for($i=0;$i<5;$i++){
+	echo "$Arr[$i] ";
+}
+echo "<br/>";
+
+//Работа с ассоциативными массивами
+$ARR["name1"]=array(
+	"parameter1" => 1,
+	"parameter2" => 2,
+	"parameter3" => 3,
+);
+$ARR["name2"]=array(
+	"parameter1" => 11,
+	"parameter2" => 22,
+	"parameter3" => 33,
+);
+$ARR["name3"]=array(
+	"parameter1" => 100,
+	"parameter2" => 200,
+	"parameter3" => 300,
+);
+
+foreach($ARR as $v1){
+	foreach($v1 as $v2)
+		echo "$v2\n";
+}
+
+//Создание json строки и вывод
+echo "<br/>";
+echo json_encode($ARR);
