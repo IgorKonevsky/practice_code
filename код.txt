@@ -94,6 +94,3 @@ foreach($ARR as $v1){
 //Создание json строки и вывод
 echo "<br/>";
 echo json_encode($ARR);
-
-echo "file modified";
-echo "ehse raz";
