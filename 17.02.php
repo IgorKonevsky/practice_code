@@ -16,7 +16,13 @@ class First_class{
 $obj1=new First_class();
 $obj1->text_output();
 
-class Human{
+
+
+interface Output{
+	function info_output();
+}
+
+class Human implements Output{
 	protected $age;
 	protected $height;
 	protected $weight;
