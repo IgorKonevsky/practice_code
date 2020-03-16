@@ -10,8 +10,4 @@ class MyPresenter extends _MainPresenter{
 }
 
 
-
-
-
-
 ?>
