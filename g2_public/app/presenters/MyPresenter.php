@@ -14,13 +14,10 @@ class MyPresenter extends _MainPresenter{
     }
     public function editRow(){
     	(new Test())->editRow();
-
     }
     public function deleteRow(){
     	(new Test())->deleteRow();
-
     }
-    
 }
 
 

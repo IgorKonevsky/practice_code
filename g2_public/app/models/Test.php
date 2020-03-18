@@ -19,30 +19,30 @@ class Test extends _MainModel{
     }
     public function editRow(){
 
-    	
+    	$id = $_GET["id"];
     	if(!empty($_GET["cit"])){
-    		_MainModel::table("users_person_data")->edit(array("citizenship" => $_GET["cit"]), array("id" => $_GET["id"]))->send();
+    		_MainModel::table("users_person_data")->edit(array("citizenship" => $_GET["cit"]), array("id" => $id))->send();
     	}
     	if(!empty($_GET["pass"])){
-    		_MainModel::table("users_person_data")->edit(array("password" => $_GET["pass"]), array("id" => $_GET["id"]))->send();
+    		_MainModel::table("users_person_data")->edit(array("password" => $_GET["pass"]), array("id" => $id))->send();
     	}
     	if(!empty($_GET["ph"])){
-    		_MainModel::table("users_person_data")->edit(array("phone" => $_GET["ph"]), array("id" => $_GET["id"]))->send();
+    		_MainModel::table("users_person_data")->edit(array("phone" => $_GET["ph"]), array("id" => $id))->send();
     	}
     	if(!empty($_GET["name"])){
-    		_MainModel::table("users_person_data")->edit(array("name" => $_GET["name"]), array("id" => $_GET["id"]))->send();
+    		_MainModel::table("users_person_data")->edit(array("name" => $_GET["name"]), array("id" => $id))->send();
     	}
     	if(!empty($_GET["sur"])){
-    		_MainModel::table("users_person_data")->edit(array("surname" => $_GET["sur"]), array("id" => $_GET["id"]))->send();
+    		_MainModel::table("users_person_data")->edit(array("surname" => $_GET["sur"]), array("id" => $id))->send();
     	}
     	if(!empty($_GET["part"])){
-    		_MainModel::table("users_person_data")->edit(array("partonymic" => $_GET["part"]), array("id" => $_GET["id"]))->send();
+    		_MainModel::table("users_person_data")->edit(array("partonymic" => $_GET["part"]), array("id" => $id))->send();
     	}
     	if(!empty($_GET["date"])){
-    		_MainModel::table("users_person_data")->edit(array("date_of_birth" => $_GET["date"]), array("id" => $_GET["id"]))->send();
+    		_MainModel::table("users_person_data")->edit(array("date_of_birth" => $_GET["date"]), array("id" => $id))->send();
     	}
     	if(!empty($_GET["gender"])){
-    		_MainModel::table("users_person_data")->edit(array("gender" => $_GET["gender"]), array("id" => $_GET["id"]))->send();
+    		_MainModel::table("users_person_data")->edit(array("gender" => $_GET["gender"]), array("id" => $id))->send();
     	}
     	
     	echo 'Row edited!';
