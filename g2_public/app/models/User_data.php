@@ -4,7 +4,7 @@ error_reporting(0);
 class User_data extends _MainModel{
 	 
  	public function addRow(){
- 		
+ 		/*
  		?>
  		
  		<html>
@@ -25,6 +25,7 @@ class User_data extends _MainModel{
  		</html>
 
  		<?php
+ 		*/
  		$arr = array(
  			"citizenship" => $_POST["citizenship"], 
  			"password" => $_POST["password"], 
@@ -58,7 +59,7 @@ class User_data extends _MainModel{
     }
     
     public function editRow(){
-
+/*
     	?>
     	<html>
  		<body>
@@ -79,7 +80,7 @@ class User_data extends _MainModel{
  		</html>
 
  		<?php
-
+*/
     	
     	
     	$arr = array(
@@ -138,6 +139,7 @@ class User_data extends _MainModel{
     	
     }
     public function deleteRow(){
+    	/*
     	?>
 
     	<html>
@@ -151,7 +153,7 @@ class User_data extends _MainModel{
  		</html>
 
  		<?php
- 		
+ 		*/
  		$id = $_POST["id"];
 
  		
